@@ -1,0 +1,139 @@
+:root{
+	--branco-principal: #ffffff;
+	--cinza-segundario: #c0c0c0;
+	--botao-azul: #167BF7;
+	--cor-de-fundo: #00030c;
+	--botao-cor-hover: #c039fa ;
+}
+body{
+	background: var(--cor-de-fundo);
+	color: var(--branco-principal);
+	font-family: inter, sans-serif;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.principal{
+	background-image: url("Background.png");
+	background-repeat: none;
+	background-size: contain;
+	align-items: center;
+	text-align: center;
+}
+.container{
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+.container__botao{
+	background: var(--botao-azul);
+	display: block;
+	border-radius: 5px;
+	color: var(--branco-principal);
+	padding: 1em;
+	font-weight: 400;
+	font-size: 16px;
+	text-decoration: none;
+	margin: 1em 0 2em 0;
+}
+.botao_segundario{
+	padding: 1em;
+	border: 2px solid var(--branco-principal);
+	background: transparent;
+	font-weight: 400;
+	font-size: 16px;
+	text-decoration: none
+}
+.container__titulo{
+	font-weight: 700;
+	font-size: 28px;
+}
+.texto__aviso{
+	font-weight: 400;
+	font-size: 12px;
+}
+.container__caixa{
+	margin: 0 6em;
+	
+}
+.conteiner__texto{
+	margin:2em
+}
+.descricao__titulo{
+	font-weight: 700;
+	font-size: 48px;
+	margin-bottom: 0.1em;
+}
+.descricao__texto{
+	font-weight: 400;
+	color: var(--cinza-segundario);
+}
+.conteiner__imagen{
+	width: 80%;
+	margin: 0 0 0 5em;
+}
+.segundario{
+	align-items: center;
+
+}
+.segundario__botao{
+	display: inline-block;
+}
+.segundario__imagem{
+	padding-left: 4em;
+}
+.titulo__segundario{
+	text-align: center;
+}
+.dispositivo__lista{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	list-style-type: none;
+	margin: 4em 0;
+}
+
+.dispositivo__titulo{
+	font-size: 48px;
+	font-weight: 700;
+}
+.dispositivos h3{
+	font-weight: 700;
+	font-size: 32px;
+}
+.rodape{
+	text-align: center;
+}
+.rodape__lista{
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	margin: 2em 0;
+}
+.lista__link a{
+	margin: 1em;
+	text-decoration: none;
+	color: var(--branco-principal);
+	font-size: 14px;
+
+}
+.rodape__texto{
+	text-align: center;
+	color: var(--cinza-segundario);
+	margin: 0 3em;
+	margin-bottom: 3em;
+	font-size: 14px;
+}
+.lista__link a:hover{
+	color: var(--botao-azul);
+}
+.lista__link a:active{
+	color: green;
+}
+.container__botao:hover{
+	background: var(--botao-cor-hover);
+	color: var(--cor-de-fundo);
+}
